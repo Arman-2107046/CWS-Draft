@@ -12,34 +12,6 @@ import { motion } from "framer-motion";
 
 // Home page component
 const Home = () => {
-  // const businessAreas = [
-  //   {
-  //     title: "Knitwear",
-  //     description:
-  //       "Specializing in t-shirts, sweatshirts, leggings, babywear, and sportswear made from high-quality knit fabrics.",
-  //     image: "images/backgrounds/bg1.png",
-  //   },
-  //   {
-  //     title: "Woven Garments",
-  //     description:
-  //       "Offering shirts, trousers, jackets, uniforms, and fashion dresses made from structured woven fabrics.",
-  //     image: "images/backgrounds/bg1.png",
-  //   },
-  //   {
-  //     title: "Denim",
-  //     description:
-  //       "Expertise in denim jeans, jackets, skirts, and overalls with various washes, treatments, and finishes.",
-  //     image: "images/backgrounds/bg1.png",
-  //   },
-  //   {
-  //     title: "Kidswear",
-  //     description:
-  //       "Comfortable and colorful clothing for babies, toddlers, and children including rompers, sets, and schoolwear.",
-  //     image: "images/backgrounds/bg1.png",
-  //   },
-  // ];
-  // const scrollToAbout = () =>
-  //   document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <div className="bg-slate-100">
@@ -123,19 +95,6 @@ const Home = () => {
 
       <section>
         <BusinessArea />
-
-        {/* button  */}
-        {/* <div className="mt-12 text-center bg-white">
-          <motion.a
-            href="/business"
-            className="inline-block px-10 py-3 text-lg font-semibold tracking-wide transition-colors duration-300 bg-white border-2 rounded-lg shadow-md text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-500 hover:text-slate-900"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            Know More About Our Businesses
-          </motion.a>
-        </div> */}
-        
       </section>
 
       {/* SUSTAINABILITY SECTION */}
