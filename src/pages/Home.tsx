@@ -1,8 +1,10 @@
 // import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 import { motion } from "framer-motion";
 
@@ -82,32 +84,76 @@ const Home = () => {
         </motion.div>
       </section>
 
+      {/* contact form  */}
+
+      <section className="bg-slate-100 py-24 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          {/* Left: Contact Information */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-8 text-gray-700"
+          >
+            <h2 className="text-4xl font-bold text-gray-800">
+              Contact Information
+            </h2>
+
+            <p className="text-lg text-gray-600">
+              For inquiries or more information about our products and services,
+              please use the contact details below or fill out the form.
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <Mail className="text-slate-900 mt-1" />
+                <div>
+                  <p className="text-sm text-gray-500">Email</p>
+                  <p className="text-lg font-medium text-gray-800">
+                    mosharraf@cottonworldsourcing.com{" "}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Phone className="text-slate-900 mt-1" />
+                <div>
+                  <p className="text-sm text-gray-500">Phone</p>
+                  <p className="text-lg font-medium text-gray-800">
+                    +880 1611-419402, +880 01309-950194
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin className="text-slate-900 mt-1" />
+                <div>
+                  <p className="text-sm text-gray-500">Address</p>
+                  <p className="text-lg font-medium text-gray-800">
+                    123 Export Avenue, Textile District <br />
+                    Dhaka, Bangladesh
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right: Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <ContactForm />
+          </motion.div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
 };
 
 export default Home;
-
-// <motion.a
-//   href="#about"
-//   className="relative inline-flex items-center gap-3 px-8 py-3 mt-10 text-sm font-semibold tracking-wider text-[#211F26] uppercase transition duration-300 border-2 border-white rounded-full hover:bg-white hover:text-black group"
-//   initial={{ opacity: 0 }}
-//   animate={{ opacity: 1 }}
-//   transition={{ duration: 1, delay: 1 }}
-// >
-//   <span>Discover More</span>
-//   <svg
-//     className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-//     fill="none"
-//     stroke="currentColor"
-//     strokeWidth="2"
-//     viewBox="0 0 24 24"
-//   >
-//     <path
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       d="M9 5l7 7-7 7"
-//     />
-//   </svg>
-// </motion.a>
