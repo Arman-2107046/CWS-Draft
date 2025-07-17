@@ -174,7 +174,7 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <img
-              src="public/Home/sustainabilityImages/images.jpeg"
+              src="/Home/sustainabilityImages/images.jpeg"
               alt="Eco Materials"
               className="object-cover w-full h-56"
             />
@@ -199,7 +199,7 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <img
-              src="public\Home\sustainabilityImages\water.jpeg"
+              src="\Home\sustainabilityImages\water.jpeg"
               alt="Water Saving"
               className="object-cover w-full h-56"
             />
@@ -224,7 +224,7 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <img
-              src="public\Home\sustainabilityImages\work.jpeg"
+              src="\Home\sustainabilityImages\work.jpeg"
               alt="Ethical Workforce"
               className="object-cover w-full h-56"
             />

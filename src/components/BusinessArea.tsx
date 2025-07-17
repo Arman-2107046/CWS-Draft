@@ -13,19 +13,19 @@ const businessAreas = [
     title: "Woven Garments",
     description:
       "Offering shirts, trousers, jackets, uniforms, and fashion dresses made from structured woven fabrics.",
-    image: "public/BusinessAreaSection/woven.jpg",
+    image: "/BusinessAreaSection/woven.jpg",
   },
   {
     title: "Denim",
     description:
       "Expertise in denim jeans, jackets, skirts, and overalls with various washes, treatments, and finishes.",
-    image: "public/BusinessAreaSection/denim.jpg",
+    image: "/BusinessAreaSection/denim.jpg",
   },
   {
     title: "Kidswear",
     description:
       "Comfortable and colorful clothing for babies, toddlers, and children including rompers, sets, and schoolwear.",
-    image: "public/BusinessAreaSection/kids.jpg",
+    image: "/BusinessAreaSection/kids.jpg",
   },
 ];
 
