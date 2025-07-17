@@ -1,6 +1,8 @@
 // components/BusinessSection.tsx
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+// import { Link } from "react-router-dom";
+
 
 const businessAreas = [
   {
@@ -29,7 +31,6 @@ const businessAreas = [
   },
 ];
 
-
 // const sustainabilityAreas = [
 //     {
 //       title: "Eco-Friendly Materials",
@@ -50,10 +51,6 @@ const businessAreas = [
 //       image: "/SustainabilitySection/waste-reduction.jpg",
 //     },
 //   ];
-  
-
-
-
 
 export default function BusinessArea() {
   return (
@@ -117,17 +114,17 @@ export default function BusinessArea() {
         </div>
       </div>
 
-                    {/* button  */}
-                    <div className=" text-center bg-transparent mt-[5rem]">
-                <motion.a
-                  href="/business"
-                  className="inline-block px-10 py-3 text-lg font-semibold tracking-wide transition-colors duration-300 bg-white border-2 rounded-lg shadow-md text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-500 hover:text-slate-900"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
-                >
-                  Know More About Our Businesses
-                </motion.a>
-              </div>
+      {/* button  */}
+      <div className=" text-center bg-transparent mt-[5rem]">
+        <motion.a
+          href="/business"
+          className="inline-block px-10 py-3 text-lg font-semibold tracking-wide transition-colors duration-300 bg-white border-2 rounded-lg shadow-md text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-500 hover:text-slate-900"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          Know More About Our Businesses
+        </motion.a>
+      </div>
     </section>
   );
 }
