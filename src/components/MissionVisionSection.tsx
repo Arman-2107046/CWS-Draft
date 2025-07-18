@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 const missions = [
   {
     title: "STRATEGIC PLANNING",
-    image: "/aboutImages/strat.jpg",
+    image: "/aboutImages/strat.webp",
     description:
       "We implement smart strategies to align sourcing goals with your business vision for maximum efficiency and growth.",
   },
   {
     title: "QUALITY ASSURANCE",
-    image: "/aboutImages/quality.jpg",
+    image: "/aboutImages/quality.webp",
     description:
       "Every product is rigorously inspected to ensure the highest standards of quality at every stage of production.",
   },
   {
     title: "PRODUCT EXCELLENCE",
-    image: "/aboutImages/img3.jpg",
+    image: "/aboutImages/img3.webp",
     description:
       "We deliver refined craftsmanship and top-grade materials to achieve excellence in every garment.",
   },
   {
     title: "TIMELY DELIVERY",
-    image: "/aboutImages/time.jpg",
+    image: "/aboutImages/time.webp",
     description:
       "Our agile operations and smart logistics guarantee on-time shipments without compromising quality.",
   },
@@ -34,7 +34,7 @@ const missions = [
   },
   {
     title: "GLOBAL EXPANSION",
-    image: "/aboutImages/global.jpg",
+    image: "/aboutImages/global.webp",
     description:
       "We are expanding our global presence by building strong partnerships across key international markets.",
   },

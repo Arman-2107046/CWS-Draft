@@ -20,7 +20,7 @@ const Business = () => {
         <div
           className="absolute inset-0 bg-cover bg-center brightness-[1] blur-md"
           style={{
-            backgroundImage: "url('/businessPage/hero5.jpg')",
+            backgroundImage: "url('/businessPage/hero5.webp')",
           }}
         />
 
@@ -60,7 +60,7 @@ const Business = () => {
           <div className="flex flex-col items-center justify-between gap-10 mb-16 md:flex-row">
             <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
               <img
-                src="/businessPage/ApparelSourcing.jpg"
+                src="/businessPage/ApparelSourcing.webp"
                 alt="Apparel Sourcing"
                 className="object-cover w-full h-full shadow-lg rounded-xl"
               />
@@ -71,22 +71,28 @@ const Business = () => {
                 Apparel Sourcing
               </h3>
               <p className="text-lg leading-relaxed text-slate-700">
-                At Cotton World Sourcing, we specialize in comprehensive apparel
-                sourcing solutions tailored for global fashion and lifestyle
-                brands. Leveraging our vast network of certified manufacturers
-                and suppliers across Asia, we ensure seamless production from
-                concept to delivery.
-                <br /> <br />
-                Our dedicated sourcing experts focus on delivering high-quality
-                garments at competitive prices, while adhering to strict
-                timelines and ethical standards. From fabric selection and
-                design consultation to quality control and logistics, we manage
-                every aspect of the supply chain with precision and
-                transparency.
-                <br /> <br />
-                With a deep understanding of market trends and a commitment to
-                innovation, we empower brands to scale efficiently, reduce
-                costs, and maintain excellence in product quality.
+                <p>
+                  At Cotton World Sourcing, we specialize in comprehensive
+                  apparel sourcing solutions tailored for global fashion and
+                  lifestyle brands. Leveraging our vast network of certified
+                  manufacturers and suppliers across Asia, we ensure seamless
+                  production from concept to delivery.
+                </p>
+
+                <p>
+                  Our dedicated sourcing experts focus on delivering
+                  high-quality garments at competitive prices, while adhering to
+                  strict timelines and ethical standards. From fabric selection
+                  and design consultation to quality control and logistics, we
+                  manage every aspect of the supply chain with precision and
+                  transparency.
+                </p>
+
+                <p>
+                  With a deep understanding of market trends and a commitment to
+                  innovation, we empower brands to scale efficiently, reduce
+                  costs, and maintain excellence in product quality.
+                </p>
               </p>
             </div>
           </div>
@@ -95,7 +101,7 @@ const Business = () => {
           <div className="flex flex-col items-center justify-between gap-10 mb-16 md:flex-row-reverse">
             <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
               <img
-                src="/businessPage/TextileManufacturing3.jpg"
+                src="/businessPage/TextileManufacturing3.webp"
                 alt="Apparel Sourcing"
                 className="object-cover w-full h-full shadow-lg rounded-xl"
               />
@@ -104,30 +110,29 @@ const Business = () => {
               <h3 className="mb-4 text-2xl font-semibold text-indigo-600">
                 Textile Manufacturing
               </h3>
+
               <p className="text-lg leading-relaxed text-slate-700">
-                At Cotton World Sourcing, we specialize in delivering premium
-                textile manufacturing and export solutions tailored for global
-                apparel and home textile brands. With a strong network of
-                certified mills and state-of-the-art production facilities
-                across Bangladesh, we supply a wide range of high-quality woven
-                and knit fabrics designed to meet international standards.
-                <br />
-                <br />
-                Our partnerships with top-tier manufacturers ensure consistent
-                quality, sustainable sourcing, and compliance with global
-                certifications. From yarn sourcing and dyeing to weaving,
-                finishing, and final inspection, each step is closely monitored
-                by our expert team to guarantee precision and excellence.
-                Whether your brand demands organic cotton, technical textiles,
-                recycled blends, or custom fabric development — we offer
-                scalable, cost-effective solutions delivered with reliability
-                and care.
-                <br />
-                <br />
-                With a proven track record in export logistics and timely
-                delivery, Cotton World Sourcing is your trusted partner in
-                powering production pipelines for fashion retailers, importers,
-                and private labels across Europe, North America, and beyond.
+                <p>
+                  At Cotton World Sourcing, we provide premium textile
+                  manufacturing and export solutions for global apparel and home
+                  textile brands. Partnering with certified mills and advanced
+                  facilities in Bangladesh, we deliver high-quality woven and
+                  knit fabrics that meet international standards.
+                </p>
+
+                <p>
+                  Our expert team oversees every step, from yarn sourcing to
+                  finishing, to ensure quality, sustainability, and compliance.
+                  Whether you need organic cotton, technical textiles, or custom
+                  fabrics, we offer scalable, reliable, and cost-effective
+                  solutions.
+                </p>
+
+                <p>
+                  With strong export logistics and on-time delivery, we are your
+                  trusted partner for fashion retailers and private labels
+                  worldwide.
+                </p>
               </p>
             </div>
           </div>
@@ -136,7 +141,7 @@ const Business = () => {
           <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
             <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
               <img
-                src="/businessPage/Sustainable2.jpg"
+                src="/businessPage/Sustainable2.webp"
                 alt="Sustainability Consulting"
                 className="object-cover w-full h-auto shadow-lg rounded-xl"
               />
@@ -145,27 +150,24 @@ const Business = () => {
               <h3 className="mb-4 text-2xl font-semibold text-indigo-600">
                 Sustainability Consulting
               </h3>
+
               <p className="text-lg leading-relaxed text-slate-700">
-                At Cotton World Sourcing, we understand that sustainability is
-                more than a buzzword, it’s a strategic priority. Our
-                Sustainability Consulting services help fashion and textile
-                brands adopt eco-friendly practices throughout their sourcing
-                and production processes.
-                <br />
-                <br />
-                We guide clients in choosing certified sustainable materials,
-                optimizing responsible manufacturing, and reducing environmental
-                impact across the supply chain. By collaborating with factories
-                and mills that follow global standards such as GOTS, OEKO-TEX®,
-                and BCI, we ensure compliance, traceability, and ethical
-                production.
-                <br />
-                <br />
-                From launching green product lines to improving existing
-                operations, we offer practical solutions and industry insights
-                that support your brand’s environmental goals. With Cotton World
-                Sourcing, you gain a reliable partner committed to helping you
-                build a cleaner, more responsible future in fashion.
+                <p>
+                  At Cotton World Sourcing, sustainability is a core priority.
+                  We help fashion and textile brands adopt eco-friendly
+                  practices across sourcing and production.
+                </p>
+                <p>
+                  From selecting certified materials to reducing environmental
+                  impact, we guide clients through responsible manufacturing
+                  with partners who meet global standards like GOTS, OEKO-TEX®,
+                  and BCI.
+                </p>
+                <p>
+                  Whether launching green product lines or improving operations,
+                  we deliver practical solutions that align with your brand’s
+                  environmental goals and build a cleaner future in fashion.
+                </p>
               </p>
             </div>
           </div>
@@ -199,17 +201,16 @@ const Business = () => {
         <Woven />
       </section>
 
-
       <section id="sweater">
         <Sweater />
       </section>
 
       <section id="chinos">
-        <Chinos/>
+        <Chinos />
       </section>
 
       <section id="intimatewear">
-        <Intimatewear/>
+        <Intimatewear />
       </section>
 
       {/* outro section for business  */}

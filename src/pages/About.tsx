@@ -25,7 +25,7 @@ const About = () => {
         >
           {/* Logo with animation */}
           <motion.img
-            src="/aboutImages/image.png" // Replace with your logo path
+            src="/aboutImages/image.webp" // Replace with your logo path
             alt="Cotton World Sourcing Logo"
             className="object-contain w-32 mb-8 sm:w-40 lg:w-48"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -52,7 +52,7 @@ const About = () => {
         {/* Left: Image */}
         <div className="w-full max-w-lg overflow-hidden transition-transform duration-500 shadow-lg cursor-pointer md:flex-1 rounded-xl hover:scale-105">
           <img
-            src="/aboutImages/about side.jpg"
+            src="/aboutImages/about side.webp"
             alt="Company Building"
             className="object-cover w-full h-auto"
             loading="lazy"
@@ -148,7 +148,7 @@ const About = () => {
 
         <div className="w-full max-w-lg overflow-hidden transition-transform duration-500 shadow-lg cursor-pointer md:flex-1 rounded-xl hover:scale-105">
           <img
-            src="/aboutImages/service.jpg"
+            src="/aboutImages/service.webp"
             alt="Company Building"
             className="object-cover w-full h-auto"
             loading="lazy"
@@ -162,7 +162,7 @@ const About = () => {
           {/* Left: Image */}
           <div className="flex justify-center">
             <img
-              src="/aboutImages/MD.jpg"
+              src="/aboutImages/MD.webp"
               alt="Managing Director"
               className="object-cover shadow-lg rounded-2xl w-72 h-85"
             />

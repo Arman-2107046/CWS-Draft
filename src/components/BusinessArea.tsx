@@ -9,25 +9,25 @@ const businessAreas = [
     title: "Knitwear",
     description:
       "Specializing in t-shirts, sweatshirts, leggings, babywear, and sportswear made from high-quality knit fabrics.",
-    image: "/BusinessAreaSection/knitwear.jpg",
+    image: "/BusinessAreaSection/knitwear.webp",
   },
   {
     title: "Woven Garments",
     description:
       "Offering shirts, trousers, jackets, uniforms, and fashion dresses made from structured woven fabrics.",
-    image: "/BusinessAreaSection/woven.jpg",
+    image: "/BusinessAreaSection/woven.webp",
   },
   {
     title: "Denim",
     description:
       "Expertise in denim jeans, jackets, skirts, and overalls with various washes, treatments, and finishes.",
-    image: "/BusinessAreaSection/denim.jpg",
+    image: "/BusinessAreaSection/denim.webp",
   },
   {
     title: "Kidswear",
     description:
       "Comfortable and colorful clothing for babies, toddlers, and children including rompers, sets, and schoolwear.",
-    image: "/BusinessAreaSection/kids.jpg",
+    image: "/BusinessAreaSection/kids.webp",
   },
 ];
 
@@ -36,19 +36,19 @@ const businessAreas = [
 //       title: "Eco-Friendly Materials",
 //       description:
 //         "Utilizing organic cotton, recycled fibers, and sustainable blends to reduce environmental impact without compromising quality.",
-//       image: "/SustainabilitySection/eco-friendly-materials.jpg",
+//       image: "/SustainabilitySection/eco-friendly-materials.webp",
 //     },
 //     {
 //       title: "Energy Efficiency",
 //       description:
 //         "Adopting renewable energy sources and energy-efficient machinery across manufacturing facilities to lower carbon footprint.",
-//       image: "/SustainabilitySection/energy-efficiency.jpg",
+//       image: "/SustainabilitySection/energy-efficiency.webp",
 //     },
 //     {
 //       title: "Waste Reduction",
 //       description:
 //         "Promoting zero-waste production methods and recycling initiatives to reduce textile waste and promote circular economy.",
-//       image: "/SustainabilitySection/waste-reduction.jpg",
+//       image: "/SustainabilitySection/waste-reduction.webp",
 //     },
 //   ];
 

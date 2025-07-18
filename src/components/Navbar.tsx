@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link to="/" className="text-xl font-bold text-gray-900">
               <div className="flex items-center">
                 <div>
-                  <img src="/logo.png" alt="" className="w-12 h-12" />
+                  <img src="/logo.webp" alt="" className="w-12 h-12" />
                 </div>
 {/* 
                 <div>
