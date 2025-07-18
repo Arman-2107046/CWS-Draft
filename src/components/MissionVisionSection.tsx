@@ -28,7 +28,7 @@ const missions = [
   },
   {
     title: "CUSTOMER SATISFACTION",
-    image: "/aboutImages/customer.png",
+    image: "/aboutImages/customer.webp",
     description:
       "We prioritize our clients by delivering reliable service, quick communication, and consistent quality.",
   },
@@ -47,7 +47,7 @@ export default function MissionVisionSection() {
     
 <section className="px-6 py-24 bg-gradient-to-br from-slate-100 via-white to-slate-100">
   <div className="mx-auto text-center max-w-7xl">
-    <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 md:text-5xl">
+    <h2 className="text-4xl font-semibold tracking-tight text-slate-800 md:text-5xl">
       Our Mission & Vision
     </h2>
     <p className="max-w-2xl mx-auto mt-4 text-lg text-slate-600">

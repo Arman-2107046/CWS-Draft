@@ -84,21 +84,21 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold tracking-wide">Our Business Area</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="p-1 text-green-500 rounded bg-green-500/10"><MapPin className="w-4 h-4" /></span>
+                <span className="p-1 rounded bg-slate-800"><MapPin className="w-4 h-4" /></span>
                 <div>
                   <span className="font-medium">Apparel Sourcing</span>
                   <div className="text-xs text-gray-400">Global sourcing for fashion and apparel brands.</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="p-1 text-green-500 rounded bg-green-500/10"><Mail className="w-4 h-4" /></span>
+                <span className="p-1 rounded bg-slate-800"><Mail className="w-4 h-4" /></span>
                 <div>
                   <span className="font-medium">Textile Manufacturing</span>
                   <div className="text-xs text-gray-400">High-quality textile production and supply chain management.</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <span className="p-1 text-green-500 rounded bg-green-500/10"><Phone className="w-4 h-4" /></span>
+                <span className="p-1 rounded bg-slate-800"><Phone className="w-4 h-4" /></span>
                 <div>
                   <span className="font-medium">Sustainability Consulting</span>
                   <div className="text-xs text-gray-400">Advising on eco-friendly and sustainable sourcing practices.</div>
@@ -112,12 +112,12 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold tracking-wide">Contact Info</h3>
             <div className="space-y-3 text-sm text-gray-300">
               <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 mt-0.5" />
+                <Mail className="w-4 h-4 mt-0.5 "  />
                 <span>mosharraf@cottonworldsourcing.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-0.5" />
-                <span>+880 1611-419402, +880 01309-950194</span>
+                <span>+880 1611-419402, +880 1309-950194</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5" />

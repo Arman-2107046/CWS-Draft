@@ -3,7 +3,19 @@ import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import MissionVisionSection from "../components/MissionVisionSection";
 
+import { useEffect } from "react";
+
+
+
+
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+
+
   return (
     <div>
       <Navbar />
@@ -61,7 +73,7 @@ const About = () => {
 
         {/* Right: Company Profile */}
         <div className="w-full max-w-xl font-sans text-gray-800 md:flex-1">
-          <h2 className="mb-6 text-4xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-6 text-4xl font-semibold tracking-tight text-gray-900">
             About Cotton World Sourcing
           </h2>
 
@@ -109,7 +121,7 @@ const About = () => {
 
         {/* Right: Company Profile */}
         <div className="w-full max-w-xl font-sans text-gray-800 md:flex-1">
-          <h2 className="mb-6 text-4xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-6 text-4xl font-semibold tracking-tight text-gray-900">
             Our Commitment to Quality & Service Excellence
           </h2>
 
@@ -170,7 +182,7 @@ const About = () => {
 
           {/* Right: Text */}
           <div>
-            <h2 className="text-3xl font-bold text-slate-800 sm:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-800 sm:text-4xl">
               Message from the Managing Director
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">

@@ -7,11 +7,14 @@ import BusinessArea from "../components/BusinessArea";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 // Home page component
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-slate-100">
@@ -63,7 +66,7 @@ const Home = () => {
       {/* About Section */}
 
       <section className="px-6 py-20 text-gray-800 bg-white md:px-12 lg:px-24">
-        <div className="max-w-5xl mx-auto space-y-6 text-center">
+        <div className="max-w-5xl mx-auto space-y-6 text-center mb-15">
           <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
             Weaving Trust, Delivering Excellence
           </h2>
@@ -77,6 +80,7 @@ const Home = () => {
             demands, empowering fashion and textile industries worldwide.
           </p>
         </div>
+
 
         <HomeIntro />
         <div className="mt-12 text-center bg-white">
@@ -101,7 +105,7 @@ const Home = () => {
       <section className="px-6 py-24 text-gray-800 bg-white">
         <div className="mx-auto mb-16 text-center max-w-7xl">
           <motion.h2
-            className="text-4xl font-bold sm:text-5xl"
+            className="text-4xl font-semibold sm:text-5xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -221,7 +225,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="space-y-8 text-gray-700"
           >
-            <h2 className="text-4xl font-bold text-gray-800">
+            <h2 className="text-4xl font-semibold text-gray-800">
               Contact Information
             </h2>
 

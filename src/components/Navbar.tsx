@@ -36,34 +36,13 @@ const Navbar = () => {
                 <div>
                   <img src="/logo.webp" alt="" className="w-12 h-12" />
                 </div>
-{/* 
-                <div>
-                  COTTON WORLD<span className="text-green-600"> SOURCING</span>
-                </div> */}
               </div>
             </Link>
           </div>
 
-          {/* <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
-              <div className="flex items-center">
-                <Link
-                  to="/"
-                  className="flex items-center text-xl font-bold text-gray-900"
-                >
-                  <img src="/logo.png" alt="Logo" className="w-12 h-12 mr-1" />
-                  <span>
-                    COTTON WORLD
-                    <span className="text-green-600"> SOURCING</span>
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div> */}
-
           <div className="lg:hidden">
             <button
-              className="text-lg text-gray-800 focus:outline-none"
+              className="text-lg font-semibold text-gray-800 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
             >
@@ -99,7 +78,7 @@ const Navbar = () => {
               className="text-xl font-bold text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              COTTON WORLD<span className="text-green-600"> SOURCING</span>
+      <img src="/logo.webp" alt="Cotton World Sourcing"  className="w-12 h-12 "/>
             </Link>
             <button
               onClick={() => setIsOpen(false)}

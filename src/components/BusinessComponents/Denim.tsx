@@ -32,9 +32,9 @@ const Denim = () => {
     <section className="py-16 bg-white">
       {/* Header */}
       <div className="px-4 mx-auto mb-10 text-center max-w-7xl">
-        <h2 className="text-4xl font-bold text-slate-800">Denim Collection</h2>
+        <h2 className="text-4xl font-semibold text-slate-800">Denim Collection</h2>
         <p className="mt-2 text-lg text-slate-600">
-          Explore our premium denim range — designed for comfort, crafted for style.
+          Explore our premium denim range designed for comfort, crafted for style.
         </p>
       </div>
 

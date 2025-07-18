@@ -4,9 +4,15 @@ import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
 import { Mail, Phone, MapPin } from "lucide-react";
 
+import { useEffect } from "react";
+
 // import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -22,7 +28,7 @@ const Contact = () => {
 
         {/* Hero Content with motion animations */}
         <motion.div
-          className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center font-dm text-gray-800"
+          className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-gray-800 font-dm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
@@ -53,10 +59,10 @@ const Contact = () => {
 
       {/* FIRST SECTION  */}
 
-      <section className="bg-slate-100 py-24 px-6">
+      <section className="px-6 py-24 bg-slate-100">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2
-            className="text-4xl sm:text-5xl font-bold text-gray-800 mb-6 leading-tight"
+            className="mb-6 text-4xl font-semibold leading-tight text-gray-800 sm:text-5xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -66,7 +72,7 @@ const Contact = () => {
           </motion.h2>
 
           <motion.p
-            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            className="max-w-2xl mx-auto text-lg text-gray-600"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -83,8 +89,8 @@ const Contact = () => {
 import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion"; */}
 
-      <section className="bg-slate-100 py-24 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <section className="px-6 py-24 bg-slate-100">
+        <div className="grid items-start grid-cols-1 gap-16 mx-auto max-w-7xl md:grid-cols-2">
           {/* Left: Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -93,7 +99,7 @@ import { motion } from "framer-motion"; */}
             viewport={{ once: true }}
             className="space-y-8 text-gray-700"
           >
-            <h2 className="text-4xl font-bold text-gray-800">
+            <h2 className="text-4xl font-semibold text-gray-800">
               Contact Information
             </h2>
 
@@ -104,7 +110,7 @@ import { motion } from "framer-motion"; */}
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <Mail className="text-slate-900 mt-1" />
+                <Mail className="mt-1 text-slate-900" />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
                   <p className="text-lg font-medium text-gray-800">
@@ -114,7 +120,7 @@ import { motion } from "framer-motion"; */}
               </div>
 
               <div className="flex items-start gap-4">
-                <Phone className="text-slate-900 mt-1" />
+                <Phone className="mt-1 text-slate-900" />
                 <div>
                   <p className="text-sm text-gray-500">Phone</p>
                   <p className="text-lg font-medium text-gray-800">
@@ -124,7 +130,7 @@ import { motion } from "framer-motion"; */}
               </div>
 
               <div className="flex items-start gap-4">
-                <MapPin className="text-slate-900 mt-1" />
+                <MapPin className="mt-1 text-slate-900" />
                 <div>
                   <p className="text-sm text-gray-500">Address</p>
                   <p className="text-lg font-medium text-gray-800">
@@ -148,22 +154,8 @@ import { motion } from "framer-motion"; */}
         </div>
       </section>
 
-      {/* <section id="contact">
-        <h2>Our Location</h2>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3469.5456922467447!2d90.42035647511719!3d23.81318697862774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sjamuna%20future%20park!5e1!3m2!1sen!2sbd!4v1752694918538!5m2!1sen!2sbd"
-          width="600"
-          height="450"
-          style={{ border: 0 }} // ✅ style as an object
-          // allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </section> */}
-
-      <section className="bg-white py-20 px-6 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="px-6 py-20 bg-white border-t border-gray-200">
+        <div className="grid items-center grid-cols-1 gap-12 mx-auto max-w-7xl md:grid-cols-2">
           {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -172,17 +164,17 @@ import { motion } from "framer-motion"; */}
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
+            <h3 className="text-3xl font-semibold text-gray-800 md:text-4xl">
               Visit Our Office
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg leading-relaxed text-gray-600">
               We welcome partners, clients, and collaborators to our Dhaka
               office. Please feel free to visit us at the location shown. Our
               doors are always open to new opportunities and meaningful
               conversations.
             </p>
 
-            <div className="text-left mt-6">
+            <div className="mt-6 text-left">
               <p className="text-sm text-gray-500">Address</p>
               <p className="text-lg font-medium text-gray-800">
                 123 Export Avenue, Textile District

@@ -7,4 +7,10 @@
 html, body {
     overflow-x: hidden;
   }
-  
+
+
+  body {
+    font-weight: 300;          /* Light */
+    line-height: 1.75;         /* relaxed / leading-relaxed */
+    @apply text-gray-700;      /* the gray you want—remove if not using Tailwind in CSS */
+  }

@@ -71,11 +71,13 @@ const ContactForm = () => {
 
         {/* Submit Button */}
         <button
-          type="submit"
-          className="px-6 py-3 font-semibold text-white transition rounded-md shadow bg-slate-800 hover:bg-slate-900"
-        >
-          Send Message
-        </button>
+  type="submit"
+  className="px-6 py-3 font-semibold text-white transition-all duration-300 rounded-md shadow-md bg-slate-800 hover:bg-slate-700 hover:shadow-lg hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-slate-400"
+>
+  Send Message
+</button>
+
+
       </motion.form>
     </section>
   );

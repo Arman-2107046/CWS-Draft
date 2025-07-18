@@ -8,8 +8,88 @@ import Woven from "../components/BusinessComponents/Woven";
 import Sweater from "../components/BusinessComponents/Sweater";
 import Chinos from "../components/BusinessComponents/Chinos";
 import Intimatewear from "../components/BusinessComponents/Intimatewear";
+import { useEffect } from "react";
+
+// import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Business = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const id = location.hash.replace("#", "");
+    let retry = 0; // safety valve
+
+    const scrollWhenStable = () => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      // Compute distance from top *at this moment*
+      const top = el.getBoundingClientRect().top + window.scrollY;
+
+      // If the position changes again within 200 ms we simply re-scroll
+      const attemptScroll = () => {
+        if (window.scrollY.toFixed() !== top.toFixed()) {
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      };
+
+      attemptScroll();
+
+      // Retry a couple of times if images keep shifting
+      if (++retry <= 10) {
+        setTimeout(scrollWhenStable, 200);
+      }
+    };
+
+    // Wait for the *entire* render + paint cycle
+    const raf = requestAnimationFrame(() => setTimeout(scrollWhenStable, 100));
+
+    return () => cancelAnimationFrame(raf);
+  }, [location]);
+
+  const businessAreas = [
+    {
+      title: "Apparel Sourcing",
+      description: [
+        "At Cotton World Sourcing, we specialize in comprehensive apparel sourcing solutions tailored for global fashion and lifestyle brands. Leveraging our vast network of certified manufacturers and suppliers across Asia, we ensure seamless production from concept to delivery.",
+        "Our dedicated sourcing experts focus on delivering high-quality garments at competitive prices, while adhering to strict timelines and ethical standards. From fabric selection and design consultation to quality control and logistics, we manage every aspect of the supply chain with precision and transparency.",
+        "With a deep understanding of market trends and a commitment to innovation, we empower brands to scale efficiently, reduce costs, and maintain excellence in product quality.",
+      ],
+      image: "/businessPage/ApparelSourcing.webp",
+      reverse: false,
+    },
+    {
+      title: "Textile Manufacturing",
+      description: [
+        "At Cotton World Sourcing, we provide premium textile manufacturing and export solutions for global apparel and home textile brands. Partnering with certified mills and advanced facilities in Bangladesh, we deliver high-quality woven and knit fabrics that meet international standards.",
+        "Our expert team oversees every step, from yarn sourcing to finishing, to ensure quality, sustainability, and compliance. Whether you need organic cotton, technical textiles, or custom fabrics, we offer scalable, reliable, and cost-effective solutions.",
+        "With strong export logistics and on-time delivery, we are your trusted partner for fashion retailers and private labels worldwide.",
+      ],
+      image: "/businessPage/TextileManufacturing3.webp",
+      reverse: true,
+    },
+    {
+      title: "Sustainability Consulting",
+      description: [
+        "At Cotton World Sourcing, sustainability is a core priority. We help fashion and textile brands adopt eco-friendly practices across sourcing and production.",
+        "From selecting certified materials to reducing environmental impact, we guide clients through responsible manufacturing with partners who meet global standards like GOTS, OEKO-TEX®, and BCI.",
+        "Whether launching green product lines or improving operations, we deliver practical solutions that align with your brand’s environmental goals and build a cleaner future in fashion.",
+      ],
+      image: "/businessPage/Sustainable2.webp",
+      reverse: false,
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -47,134 +127,50 @@ const Business = () => {
         </motion.div>
       </section>
 
-      {/* Our Business Area  */}
-
-      <section className="px-6 py-24 bg-slate-50 text-slate-800">
+      <section className="px-4 py-24 sm:px-6 lg:px-12 bg-slate-50 text-slate-800 ">
         <div className="mx-auto max-w-7xl">
-          {/* Section Headline */}
-          <h2 className="mb-16 text-4xl font-bold text-center text-slate-900">
+          <h2 className="mb-16 text-3xl font-semibold text-center sm:text-4xl text-slate-900">
             Our Business Areas
           </h2>
 
-          {/* Business Area 1 */}
-          <div className="flex flex-col items-center justify-between gap-10 mb-16 md:flex-row">
-            <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
-              <img
-                src="/businessPage/ApparelSourcing.webp"
-                alt="Apparel Sourcing"
-                className="object-cover w-full h-full shadow-lg rounded-xl"
-              />
-            </div>
+          <div className="p-10 space-y-24">
+            {businessAreas.map((area, index) => (
+              <div
+                key={index}
+                className={`flex flex-col-reverse items-center gap-10 md:gap-x-12 ${
+                  area.reverse ? "md:flex-row-reverse" : "md:flex-row"
+                }`}
+              >
+                {/* Image Block */}
+                <div className="flex justify-center w-full md:w-1/2">
+                  <div className="overflow-hidden shadow-xl aspect-[3/4] w-full max-w-[320px] rounded-2xl">
+                    <img
+                      src={area.image}
+                      alt={area.title}
+                      className="object-cover w-full h-full transition-transform duration-500 transform rounded-2xl hover:scale-105"
+                      />
+                  </div>
+                </div>
 
-            <div className="w-full md:w-1/2">
-              <h3 className="mb-4 text-2xl font-semibold text-indigo-600">
-                Apparel Sourcing
-              </h3>
-              <p className="text-lg leading-relaxed text-slate-700">
-                <p>
-                  At Cotton World Sourcing, we specialize in comprehensive
-                  apparel sourcing solutions tailored for global fashion and
-                  lifestyle brands. Leveraging our vast network of certified
-                  manufacturers and suppliers across Asia, we ensure seamless
-                  production from concept to delivery.
-                </p>
-
-                <p>
-                  Our dedicated sourcing experts focus on delivering
-                  high-quality garments at competitive prices, while adhering to
-                  strict timelines and ethical standards. From fabric selection
-                  and design consultation to quality control and logistics, we
-                  manage every aspect of the supply chain with precision and
-                  transparency.
-                </p>
-
-                <p>
-                  With a deep understanding of market trends and a commitment to
-                  innovation, we empower brands to scale efficiently, reduce
-                  costs, and maintain excellence in product quality.
-                </p>
-              </p>
-            </div>
-          </div>
-
-          {/* Business Area 2 */}
-          <div className="flex flex-col items-center justify-between gap-10 mb-16 md:flex-row-reverse">
-            <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
-              <img
-                src="/businessPage/TextileManufacturing3.webp"
-                alt="Apparel Sourcing"
-                className="object-cover w-full h-full shadow-lg rounded-xl"
-              />
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="mb-4 text-2xl font-semibold text-indigo-600">
-                Textile Manufacturing
-              </h3>
-
-              <p className="text-lg leading-relaxed text-slate-700">
-                <p>
-                  At Cotton World Sourcing, we provide premium textile
-                  manufacturing and export solutions for global apparel and home
-                  textile brands. Partnering with certified mills and advanced
-                  facilities in Bangladesh, we deliver high-quality woven and
-                  knit fabrics that meet international standards.
-                </p>
-
-                <p>
-                  Our expert team oversees every step, from yarn sourcing to
-                  finishing, to ensure quality, sustainability, and compliance.
-                  Whether you need organic cotton, technical textiles, or custom
-                  fabrics, we offer scalable, reliable, and cost-effective
-                  solutions.
-                </p>
-
-                <p>
-                  With strong export logistics and on-time delivery, we are your
-                  trusted partner for fashion retailers and private labels
-                  worldwide.
-                </p>
-              </p>
-            </div>
-          </div>
-
-          {/* Business Area 3 */}
-          <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
-            <div className="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
-              <img
-                src="/businessPage/Sustainable2.webp"
-                alt="Sustainability Consulting"
-                className="object-cover w-full h-auto shadow-lg rounded-xl"
-              />
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="mb-4 text-2xl font-semibold text-indigo-600">
-                Sustainability Consulting
-              </h3>
-
-              <p className="text-lg leading-relaxed text-slate-700">
-                <p>
-                  At Cotton World Sourcing, sustainability is a core priority.
-                  We help fashion and textile brands adopt eco-friendly
-                  practices across sourcing and production.
-                </p>
-                <p>
-                  From selecting certified materials to reducing environmental
-                  impact, we guide clients through responsible manufacturing
-                  with partners who meet global standards like GOTS, OEKO-TEX®,
-                  and BCI.
-                </p>
-                <p>
-                  Whether launching green product lines or improving operations,
-                  we deliver practical solutions that align with your brand’s
-                  environmental goals and build a cleaner future in fashion.
-                </p>
-              </p>
-            </div>
+                {/* Text Block */}
+                <div className="w-full text-center md:w-1/2 md:text-left">
+                  <h3 className="mb-4 text-2xl font-semibold text-indigo-600 sm:text-3xl">
+                    {area.title}
+                  </h3>
+                  <div className="space-y-4 text-base leading-relaxed sm:text-lg text-slate-700">
+                    {area.description.map((para, idx) => (
+                      <p key={idx}>{para}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <h1 className="m-8 text-5xl font-extrabold text-center text-gray-700">
+      {/* Our Business Area  */}
+      <h1 className="m-8 text-5xl font-semibold text-center text-slate-800">
         Our Product Categories
       </h1>
 
@@ -195,18 +191,18 @@ const Business = () => {
         <Kidswear />
       </section>
 
+      <section id="chinos">
+        <Chinos />
+      </section>
+
       {/* Woven  */}
 
-      <section id="woven">
+      <section id="woven" style={{ scrollMarginTop: "100px" }}>
         <Woven />
       </section>
 
       <section id="sweater">
         <Sweater />
-      </section>
-
-      <section id="chinos">
-        <Chinos />
       </section>
 
       <section id="intimatewear">
@@ -222,7 +218,7 @@ const Business = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400"
+            className="text-4xl font-semibold text-bold transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400"
           >
             Delivering Excellence in Every Stitch
           </motion.h2>

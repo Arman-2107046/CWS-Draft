@@ -32,7 +32,7 @@ const Knitwear = () => {
     <section className="py-16 bg-white">
       {/* Header */}
       <div className="px-4 mx-auto mb-10 text-center max-w-7xl">
-        <h2 className="text-4xl font-bold text-slate-800">Knitwear Collection</h2>
+        <h2 className="text-4xl font-semibold text-slate-800">Knitwear Collection</h2>
         <p className="mt-2 text-lg text-slate-600">
           Discover our comfortable and stylish knitwear products crafted with care.
         </p>
