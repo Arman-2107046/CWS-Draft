@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const knit = [
   "/Knitwear/k1.jpg",
