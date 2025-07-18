@@ -5,6 +5,9 @@ import Denim from "../components/BusinessComponents/Denim";
 import Knitwear from "../components/BusinessComponents/Knitwear";
 import Kidswear from "../components/BusinessComponents/Kidswear";
 import Woven from "../components/BusinessComponents/Woven";
+import Sweater from "../components/BusinessComponents/Sweater";
+import Chinos from "../components/BusinessComponents/Chinos";
+import Intimatewear from "../components/BusinessComponents/Intimatewear";
 
 const Business = () => {
   return (
@@ -192,8 +195,21 @@ const Business = () => {
 
       {/* Woven  */}
 
-      <section id="woven-garments">
+      <section id="woven">
         <Woven />
+      </section>
+
+
+      <section id="sweater">
+        <Sweater />
+      </section>
+
+      <section id="chinos">
+        <Chinos/>
+      </section>
+
+      <section id="intimatewear">
+        <Intimatewear/>
       </section>
 
       {/* outro section for business  */}

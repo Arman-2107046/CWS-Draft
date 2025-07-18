@@ -1,5 +1,3 @@
-
-
 const Kids = [
   "/Kidswear/k1.jpg",
   "/Kidswear/k2.jpg",
@@ -24,14 +22,15 @@ const Kidswear = () => {
         </p>
       </div>
 
-      {/* Masonry Grid */}
-      <div className="gap-4 px-4 mx-auto space-y-4 max-w-7xl columns-1 sm:columns-2 md:columns-3">
+      {/* Responsive Masonry Grid */}
+      <div className="px-4 mx-auto space-y-4 max-w-7xl columns-2 sm:columns-3 md:columns-4 lg:columns-4">
         {Kids.map((src, i) => (
           <img
             key={i}
             src={src}
             alt={`Kidswear product ${i + 1}`}
-            className="w-full mb-4 rounded-lg shadow-md break-inside"
+            className="w-full rounded-md shadow-sm break-inside-avoid"
+            loading="lazy"
           />
         ))}
       </div>

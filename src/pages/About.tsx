@@ -162,7 +162,7 @@ const About = () => {
           {/* Left: Image */}
           <div className="flex justify-center">
             <img
-              src="/aboutImages/MD.jpg" // Replace with actual path
+              src="/aboutImages/MD.jpg"
               alt="Managing Director"
               className="object-cover shadow-lg rounded-2xl w-72 h-85"
             />

@@ -32,9 +32,35 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold text-gray-900">
-              COTTON WORLD<span className="text-green-600"> SOURCING</span>
+              <div className="flex items-center">
+                <div>
+                  <img src="/logo.png" alt="" className="w-12 h-12" />
+                </div>
+{/* 
+                <div>
+                  COTTON WORLD<span className="text-green-600"> SOURCING</span>
+                </div> */}
+              </div>
             </Link>
           </div>
+
+          {/* <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <div className="flex items-center">
+                <Link
+                  to="/"
+                  className="flex items-center text-xl font-bold text-gray-900"
+                >
+                  <img src="/logo.png" alt="Logo" className="w-12 h-12 mr-1" />
+                  <span>
+                    COTTON WORLD
+                    <span className="text-green-600"> SOURCING</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div> */}
+
           <div className="lg:hidden">
             <button
               className="text-lg text-gray-800 focus:outline-none"
@@ -115,7 +141,7 @@ const Navbar = () => {
             </div>
             <div className="text-sm text-gray-600">
               <p> mosharraf@cottonworldsourcing.com</p>
-              <p> +880 1611-419402, +880 01309-950194 </p>
+              <p> +880 1611-419402, +880 1309-950194 </p>
             </div>
           </div>
         </div>
