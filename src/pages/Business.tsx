@@ -57,7 +57,7 @@ const Business = () => {
       attemptScroll();
 
       // Retry a couple of times if images keep shifting
-      if (++retry <= 10) {
+      if (++retry <= 1000) {
         setTimeout(scrollWhenStable, 200);
       }
     };
