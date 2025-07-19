@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
-
 import { useEffect } from "react";
 import { lazy, Suspense } from "react";
 
@@ -21,7 +20,6 @@ const Chinos = lazy(() => import("../components/BusinessComponents/Chinos"));
 const Intimatewear = lazy(
   () => import("../components/BusinessComponents/Intimatewear")
 );
-
 
 // import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
