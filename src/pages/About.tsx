@@ -188,7 +188,7 @@ const About = () => {
             <p className="mt-6 text-lg leading-relaxed text-slate-600">
               It’s my pleasure to welcome you to our journey in the textile
               industry. I’m Md. Mosharraf Hossain, a Textile Engineer with over
-              a decade of experience working with top European and American
+              a decade of experience working with top European, American, and Australian
               buyers. In 2025, I founded Cotton World Sourcing with a vision to
               provide trusted, high-quality garment sourcing solutions, focusing
               on competitive pricing, timely delivery, and strict quality

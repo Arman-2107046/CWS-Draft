@@ -22,7 +22,7 @@ const Contact = () => {
         <div
           className="absolute inset-0 bg-cover bg-center brightness-[1] opacity-60 blur-[5px]"
           style={{
-            backgroundImage: "url('contactImages/img1.jpg')",
+            backgroundImage: "url('contactImages/img1.webp')",
           }}
         />
 
