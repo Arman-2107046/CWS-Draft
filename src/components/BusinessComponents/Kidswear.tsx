@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 
 const Kids = [
-  "/Kidswear/k1.webp",
-  "/Kidswear/k2.webp",
-  "/Kidswear/k3.webp",
-  "/Kidswear/k4.webp",
-  "/Kidswear/k5.webp",
-  "/Kidswear/k6.webp",
-  "/Kidswear/k7.webp",
-  "/Kidswear/k8.webp",
-  "/Kidswear/k9.webp",
-  "/Kidswear/k10.webp",
+  "/Kidswear/kid1.webp",
+  "/Kidswear/kid2.webp",
+  "/Kidswear/kid3.webp",
+  "/Kidswear/kid4.webp",
+  "/Kidswear/kid5.webp",
+  "/Kidswear/kid6.webp",
+  "/Kidswear/kid7.webp",
+  "/Kidswear/kid8.webp",
+  "/Kidswear/kid9.webp",
+  "/Kidswear/kid10.webp",
 ];
 
 const Kidswear = () => {

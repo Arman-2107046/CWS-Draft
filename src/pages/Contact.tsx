@@ -45,15 +45,6 @@ const Contact = () => {
             <div>AND COMMITMENT</div>
           </motion.h1>
 
-          {/* Commented out paragraph, can be uncommented if needed */}
-          {/* <motion.p
-            className="mt-6 text-lg sm:text-xl lg:text-2xl text-[#60646C]"
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            Trusted Apparel Exporter
-          </motion.p> */}
         </motion.div>
       </section>
 
