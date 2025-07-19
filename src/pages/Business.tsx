@@ -1,14 +1,27 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import Denim from "../components/BusinessComponents/Denim";
-import Knitwear from "../components/BusinessComponents/Knitwear";
-import Kidswear from "../components/BusinessComponents/Kidswear";
-import Woven from "../components/BusinessComponents/Woven";
-import Sweater from "../components/BusinessComponents/Sweater";
-import Chinos from "../components/BusinessComponents/Chinos";
-import Intimatewear from "../components/BusinessComponents/Intimatewear";
+
+
 import { useEffect } from "react";
+import { lazy, Suspense } from "react";
+
+// Business Components
+
+const Denim = lazy(() => import("../components/BusinessComponents/Denim"));
+const Knitwear = lazy(
+  () => import("../components/BusinessComponents/Knitwear")
+);
+const Kidswear = lazy(
+  () => import("../components/BusinessComponents/Kidswear")
+);
+const Woven = lazy(() => import("../components/BusinessComponents/Woven"));
+const Sweater = lazy(() => import("../components/BusinessComponents/Sweater"));
+const Chinos = lazy(() => import("../components/BusinessComponents/Chinos"));
+const Intimatewear = lazy(
+  () => import("../components/BusinessComponents/Intimatewear")
+);
+
 
 // import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -127,6 +140,7 @@ const Business = () => {
         </motion.div>
       </section>
 
+      {/* intro section  */}
       <section className="px-4 py-24 sm:px-6 lg:px-12 bg-slate-50 text-slate-800 ">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-16 text-3xl font-semibold text-center sm:text-4xl text-slate-900">
@@ -148,7 +162,7 @@ const Business = () => {
                       src={area.image}
                       alt={area.title}
                       className="object-cover w-full h-full transition-transform duration-500 transform rounded-2xl hover:scale-105"
-                      />
+                    />
                   </div>
                 </div>
 
@@ -174,39 +188,88 @@ const Business = () => {
         Our Product Categories
       </h1>
 
-      {/* Denim  */}
-
       <section id="denim">
-        <Denim />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Denim...
+            </div>
+          }
+        >
+          <Denim />
+        </Suspense>
       </section>
 
-      {/* Knitwear  */}
       <section id="knitwear">
-        <Knitwear />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Knitwear...
+            </div>
+          }
+        >
+          <Knitwear />
+        </Suspense>
       </section>
-
-      {/* Kidswear  */}
 
       <section id="kidswear">
-        <Kidswear />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Kidswear...
+            </div>
+          }
+        >
+          <Kidswear />
+        </Suspense>
       </section>
 
       <section id="chinos">
-        <Chinos />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Chinos...
+            </div>
+          }
+        >
+          <Chinos />
+        </Suspense>
       </section>
 
-      {/* Woven  */}
-
       <section id="woven" style={{ scrollMarginTop: "100px" }}>
-        <Woven />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Woven...
+            </div>
+          }
+        >
+          <Woven />
+        </Suspense>
       </section>
 
       <section id="sweater">
-        <Sweater />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Sweater...
+            </div>
+          }
+        >
+          <Sweater />
+        </Suspense>
       </section>
 
       <section id="intimatewear">
-        <Intimatewear />
+        <Suspense
+          fallback={
+            <div className="py-10 text-center text-slate-500">
+              Loading Intimatewear...
+            </div>
+          }
+        >
+          <Intimatewear />
+        </Suspense>
       </section>
 
       {/* outro section for business  */}

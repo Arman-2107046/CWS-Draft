@@ -124,7 +124,7 @@ import { motion } from "framer-motion"; */}
                 <div>
                   <p className="text-sm text-gray-500">Phone</p>
                   <p className="text-lg font-medium text-gray-800">
-                    +880 1611-419402, +880 01309-950194{" "}
+                    +880 1611-419402, +880 1309-950194{" "}
                   </p>
                 </div>
               </div>

@@ -38,6 +38,18 @@ const Denim = () => {
         </p>
       </div>
 
+
+
+      {/* <div className="overflow-hidden shadow-xl aspect-[3/4] w-full max-w-[320px] rounded-2xl">
+                    <img
+                      src={area.image}
+                      alt={area.title}
+                      className="object-cover w-full h-full transition-transform duration-500 transform rounded-2xl hover:scale-105"
+                    />
+                  </div> */}
+
+
+
       {/* Masonry Grid */}
       <div className="gap-4 px-4 mx-auto space-y-4 max-w-7xl columns-2 sm:columns-3 md:columns-4">
         {denim.map((src, i) => (
@@ -111,3 +123,6 @@ const Denim = () => {
 };
 
 export default Denim;
+
+      {/* Masonry Grid */}
+     
