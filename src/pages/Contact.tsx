@@ -44,7 +44,6 @@ const Contact = () => {
             <div>WITH COMMUNICATION</div>
             <div>AND COMMITMENT</div>
           </motion.h1>
-
         </motion.div>
       </section>
 
@@ -168,8 +167,7 @@ import { motion } from "framer-motion"; */}
             <div className="mt-6 text-left">
               <p className="text-sm text-gray-500">Address</p>
               <p className="text-lg font-medium text-gray-800">
-                123 Export Avenue, Textile District
-                <br />
+                Uttara sector 13, Road- 17 <br />
                 Dhaka, Bangladesh
               </p>
             </div>
@@ -183,17 +181,19 @@ import { motion } from "framer-motion"; */}
             viewport={{ once: true }}
             className="w-full h-[350px] rounded-xl overflow-hidden shadow-lg border"
           >
+
+
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3469.5456922467447!2d90.42035647511719!3d23.81318697862774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sjamuna%20future%20park!5e1!3m2!1sen!2sbd!4v1752694918538!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6299.364249616243!2d90.38324473957482!3d23.87186252540126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41746c7628b%3A0x909d6a0f5cebfe8f!2sSector-13%2C%20Dhaka%201230!5e1!3m2!1sen!2sbd!4v1753015638921!5m2!1sen!2sbd"
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              // allowFullScreen=""
+              // allowfullscreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Our Location"
               className="w-full h-full"
-            />
+            ></iframe>
           </motion.div>
         </div>
       </section>

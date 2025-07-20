@@ -81,7 +81,6 @@ const Home = () => {
           </p>
         </div>
 
-
         <HomeIntro />
         <div className="mt-12 text-center bg-white">
           <motion.a
@@ -260,7 +259,7 @@ const Home = () => {
                 <div>
                   <p className="text-sm text-gray-500">Address</p>
                   <p className="text-lg font-medium text-gray-800">
-                    123 Export Avenue, Textile District <br />
+                    Uttara sector 13, Road- 17 <br />
                     Dhaka, Bangladesh
                   </p>
                 </div>
