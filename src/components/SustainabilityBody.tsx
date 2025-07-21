@@ -4,7 +4,7 @@ const sustainabilityArea = [
   {
     title: "Eco-Friendly Materials",
     description:
-      "At Premium Textile, we prioritize sustainable and recycled materials across all production stages. By minimizing waste and conserving resources, we reduce our environmental footprint while delivering quality without compromise.",
+      "At Cotton World Sourcing, we prioritize sustainable and recycled materials across all production stages. By minimizing waste and conserving resources, we reduce our environmental footprint while delivering quality without compromise.",
     image: "/sustainabilityImages/eco.webp",
   },
   {
