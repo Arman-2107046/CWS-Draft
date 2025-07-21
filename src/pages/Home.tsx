@@ -558,7 +558,7 @@
 
 // export default Home;
 
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
